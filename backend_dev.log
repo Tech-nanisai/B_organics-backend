@@ -1,0 +1,12 @@
+
+> backend@1.0.0 dev
+> nodemon index.js
+
+[33m[nodemon] 3.1.9[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+⏳ Attempting to connect to MongoDB Atlas...
+🚀 Server running on port 5678
+Terminate batch job (Y/N)? Terminate batch job (Y/N)? ^C

@@ -1,0 +1,4 @@
+⏳ Attempting to connect to MongoDB Atlas...
+🚀 Server running on port 5678
+⚠️ MongoDB disconnected
+👉 Please ensure your IP is whitelisted in MongoDB Atlas: https://cloud.mongodb.com/
