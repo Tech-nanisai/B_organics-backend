@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-  origin: 'http://localhost:5173', // your Vite frontend
+  origin: ['http://localhost:5173', 'https://borganics-5gij-5khozzapi-aettari-sailus-projects.vercel.app', 'https://borganics.vercel.app'],
   credentials: true
 }));
 
