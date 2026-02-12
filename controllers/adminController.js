@@ -81,8 +81,8 @@ const loginAdmin = async (req, res) => {
         // Set Cookie
         res.cookie("jwt_token", token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: "Lax",
+            secure: true, // Required for cross-site (Render/Vercel)
+            sameSite: "None", // Required for cross-site
             maxAge: 60 * 60 * 1000, // 1 hour
         });
 
@@ -106,8 +106,8 @@ const logoutAdmin = (req, res) => {
     res.clearCookie("jwt_token", {
         path: "/",
         httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: "Lax",
+        secure: true,
+        sameSite: "None",
     });
     res.status(200).json({ message: "Logged out successfully" });
 };
